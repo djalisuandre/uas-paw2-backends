@@ -33,7 +33,7 @@ const createRecipe = async (req, res) => {
     description: req.body.description,
     ingredients: req.body.ingredients,
     instructions: req.body.instructions,
-    coffess_id: req.body.coffess_id,
+    coffees_id: req.body.coffees_id,
     Image: req.body.image,
   });
 
@@ -72,8 +72,8 @@ const updateRecipe = async (req, res) => {
     if (req.body.instructions != null) {
       recipe.instructions = req.body.instructions;
     }
-    if (req.body.coffess_id != null) {
-      recipe.coffess_id = req.body.coffess_id;
+    if (req.body.coffees_id != null) {
+      recipe.coffees_id = req.body.coffees_id;
     }
     if (req.body.image != null) {
       recipe.image = req.body.image;

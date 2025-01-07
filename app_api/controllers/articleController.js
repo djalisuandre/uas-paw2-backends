@@ -33,7 +33,7 @@ const createArticle = async (req, res) => {
     content: req.body.content,
     category: req.body.category,
     featured_image: req.body.featured_image,
-    coffess_id: req.body.coffess_id,
+    coffees_id: req.body.coffees_id,
   });
 
   try {
@@ -71,8 +71,8 @@ const updateArticle = async (req, res) => {
     if (req.body.featured_image != null) {
       article.featured_image = req.body.featured_image;
     }
-    if (req.body.coffess_id != null) {
-      article.coffess_id = req.body.coffess_id;
+    if (req.body.coffees_id != null) {
+      article.coffees_id = req.body.coffees_id;
     }
 
     // menyimpan perubahan ke database

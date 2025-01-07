@@ -30,7 +30,7 @@ const createProduct = async (req, res) => {
   // membuat instance Product baru dari data yang diterima
   const product = new Product({
     name: req.body.name,
-    coffess_id: req.body.coffess_id,
+    coffees_id: req.body.coffees_id,
     price: req.body.price,
     quantity: req.body.quantity,
     description: req.body.description,
@@ -62,8 +62,8 @@ const updateProduct = async (req, res) => {
     }
 
     // memperbarui singkatan Product jika ada di rquest body
-    if (req.body.coffess_id != null) {
-      product.coffess_id = req.body.coffess_id;
+    if (req.body.coffees_id != null) {
+      product.coffees_id = req.body.coffees_id;
     }
     if (req.body.price != null) {
       product.price = req.body.price;
